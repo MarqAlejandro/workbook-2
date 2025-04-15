@@ -15,8 +15,6 @@ public class ScoreChecker {
 
 
     public void andTheWinnerIs(){
-
-        System.out.println("working on it");
         //each comment is a method
         getUserInput();                                                     //get input from user
         dissectAndSet();                                                    //dissect the array into 2 string arrays and set ints and strings to labelled variables
