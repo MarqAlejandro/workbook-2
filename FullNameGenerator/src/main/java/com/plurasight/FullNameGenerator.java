@@ -70,7 +70,7 @@ public class FullNameGenerator {
         return middleName;
     }
     public void setMiddleName(String middleName){
-        this.middleName = fullName;
+        this.middleName = middleName;
     }
 
     public String getLastName(){
@@ -79,6 +79,14 @@ public class FullNameGenerator {
     public void setLastName(String lastName){
         this.lastName = lastName;
     }
+
+    public String getSuffix(){
+        return suffix;
+    }
+    public void setSuffix(String suffix){
+        this.suffix = suffix;
+    }
+
 
 
 
