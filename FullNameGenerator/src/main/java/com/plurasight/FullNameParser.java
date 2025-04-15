@@ -20,14 +20,14 @@ public class FullNameParser extends FullNameGenerator {
         else if(nameArray.length >= 3) {                   //this means that there is first middle and last name and suffix
             setMiddleName(nameArray[1]);
             setLastName(nameArray[2]);
-            if(nameArray.length == 4){
+            if(nameArray.length == 4){                  //if statement just for suffix
                 setSuffix(nameArray[3]);
             }
 
-            System.out.println("\nFirst Name: " + getFirstName());
+            System.out.println("\nFirst Name: " + getFirstName());      //wall of print statements
             System.out.println("Middle Name: " + getMiddleName());
             System.out.println("Last Name: " + getLastName());
-            if(getSuffix() != null){
+            if(getSuffix() != null){                                    //will only trigger if 
                 System.out.println("Suffix: " + getSuffix());
             }
         }
