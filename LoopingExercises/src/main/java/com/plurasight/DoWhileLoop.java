@@ -7,7 +7,7 @@ public class DoWhileLoop {
         int counter = 0;
 
         do{
-            System.out.println(loveCall);
+            System.out.println(loveCall);               //Do-while loop to print love call String variable
             counter++;
         }while(counter < 5);
     }

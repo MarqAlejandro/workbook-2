@@ -10,7 +10,7 @@ public class Main {
         DoWhileLoop doWhileLoop = new DoWhileLoop();
         ForLoop forLoop = new ForLoop();
 
-        whileLoop.main();
+        whileLoop.main();                           //trigger the main of each .java class loop
         doWhileLoop.main();
         forLoop.main();
 
