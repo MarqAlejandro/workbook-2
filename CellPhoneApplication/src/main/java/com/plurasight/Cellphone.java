@@ -20,6 +20,14 @@ public class Cellphone {
         this.owner = "";
     }
 
+    public Cellphone(int serialNumber, String model, String carrier, String phoneNumber, String owner) {
+        setSerialNumber(serialNumber);
+        setModel(model);
+        setCarrier(carrier);
+        setPhoneNumber(phoneNumber);
+        setOwner(owner);
+    }
+
     public void turnOn(){                                   //main starter
         setUp();
         displayInfo();
@@ -56,6 +64,11 @@ public class Cellphone {
 
     }
 
+    public void dial(Cellphone cellphone){                      //allows for interaction between 2 objects
+        System.out.println();
+        System.out.println(getOwner() + " 's phone is calling " + cellphone.getPhoneNumber());
+
+    }
 
     public int getSerialNumber() {                          //getters and setters of each variable
         return serialNumber;
