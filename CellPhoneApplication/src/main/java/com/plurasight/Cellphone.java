@@ -20,13 +20,13 @@ public class Cellphone {
         this.owner = "";
     }
 
-    public void turnOn(){
+    public void turnOn(){                                   //main starter
         setUp();
         displayInfo();
 
     }
     public void setUp(){                                    //prompts user for input and uses setters
-        System.out.print("What is the serial number? ");
+        System.out.print("\nWhat is the serial number? ");
         setSerialNumber(scanner.nextInt());
         scanner.nextLine();
 
@@ -48,6 +48,12 @@ public class Cellphone {
         System.out.println("This is your new " + getModel() + " with serial number " + getSerialNumber());
         System.out.println("Your carrier is " + getCarrier() + " and your phone number is " + getPhoneNumber());
         System.out.println("Enjoy your new phone!");
+    }
+
+    public void dial(String phoneNumber){                      //allows for interaction between 2 objects
+        System.out.println();
+        System.out.println(getOwner() + " 's phone is calling " + phoneNumber);
+
     }
 
 
