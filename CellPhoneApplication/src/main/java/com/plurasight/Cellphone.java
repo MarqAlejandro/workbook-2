@@ -43,7 +43,7 @@ public class Cellphone {
         setOwner(scanner.nextLine());
 
     }
-    public void displayInfo(){
+    public void displayInfo(){                              //display the user's input
         System.out.println("\nHello, " + getOwner());
         System.out.println("This is your new " + getModel() + " with serial number " + getSerialNumber());
         System.out.println("Your carrier is " + getCarrier() + " and your phone number is " + getPhoneNumber());
@@ -51,7 +51,7 @@ public class Cellphone {
     }
 
 
-    public int getSerialNumber() {
+    public int getSerialNumber() {                          //getters and setters of each variable
         return serialNumber;
     }
 
